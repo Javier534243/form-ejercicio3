@@ -11,26 +11,71 @@
         <h1 class="color-text-title">Inscripción a un curso</h1>
         <p class="color-text">Rellena este formulario para inscribirte en el curso. Los campos marcados con * son obligatorios.</p>
         <form action="#">
-            <fieldset class="border-none padding-0">
-                <legend class="color-text padding-0">Datos personales</legend>
+            <fieldset class="border-none padding-0 margin-right-0px margin-left-0px">
+                <legend class="color-text padding-0 margin-bottom-10px">Datos personales</legend>
                 <div class="flex gap-20px">
                     <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
                         <label for="nombre" class="color-text">Nombre completo *</label>
-                        <input type="text" required placeholder="Nombre y apellidos" id="nombre" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus">
+                        <input type="text" required placeholder="Nombre y apellidos" id="nombre" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
                     </div>
                     <div class="flex flex-direction-column width-100-precent border-radius-5px">
                         <label for="dni" class="color-text">DNI / NIE *</label>
-                        <input type="text" required placeholder="00000000X" id="dni" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus">
+                        <input type="text" required placeholder="00000000X" id="dni" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
                     </div>
                 </div>
                 <div class="flex gap-20px">
-                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
-                        <label for="nombre" class="color-text">Correo electrónico *</label>
-                        <input type="email" required placeholder="tucorreo@ejemplo.com" id="nombre" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="email" class="color-text">Correo electrónico *</label>
+                        <input type="email" required placeholder="tucorreo@ejemplo.com" id="email" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
                     </div>
                     <div class="flex flex-direction-column width-100-precent border-radius-5px">
-                        <label for="dni" class="color-text">Teléfono de contacto *</label>
-                        <input type="tel" required placeholder="+34 600 000 000" id="dni" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus">
+                        <label for="tel" class="color-text">Teléfono de contacto *</label>
+                        <input type="tel" required placeholder="+34 600 000 000" id="tel" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    </div>
+                </div>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="date" class="color-text">Fecha de nacimiento *</label>
+                        <input type="date" required id="date" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                        <label for="barcelona" class="color-text">Ciudad</label>
+                        <input type="text" placeholder="Barcelona" id="barcelona" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    </div>
+                </div>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="postal" class="color-text">Dirección postal</label>
+                        <input type="text" id="postal" placeholder="Calle, número, piso..." class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="border-none padding-0 margin-right-0px margin-left-0px">
+                <legend class="color-text padding-0 margin-bottom-10px">Información académica y curso</legend>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="curso" class="color-text">Curso al que te quieres inscribir *</label>
+                        <select name="curso" id="curso" required class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                            <option value>Selecciona un curso…</option>
+                            <option value="dam1">1º DAM - Desarrollo de Aplicaciones Multiplataforma</option>
+                            <option value="daw1">1º DAW - Desarrollo de Aplicaciones Web</option>
+                            <option value="asir1">1º ASIR - Administración de Sistemas Informáticos en Red</option>
+                            <option value="smx1">1º SMX - Sistemas Microinformáticos y Redes</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                        <label for="turno" class="color-text">Turno preferente *</label>
+                        <div id="turno">
+                            <label>
+                                <input type="radio">
+                            </label>
+                            <label>
+                                <input type="radio">
+                            </label>
+                            <label>
+                                <input type="radio">
+                            </label>
+                        </div>
                     </div>
                 </div>
             </fieldset>
