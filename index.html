@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex justify-content-center principal-font-family ">
+    <div class="max-width-1440px width-100-precent">
+        <h1 class="color-text-title">Inscripción a un curso</h1>
+        <p class="color-text">Rellena este formulario para inscribirte en el curso. Los campos marcados con * son obligatorios.</p>
+        <form action="#">
+            <fieldset class="border-none padding-0">
+                <legend class="color-text padding-0">Datos personales</legend>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="nombre" class="color-text">Nombre completo *</label>
+                        <input type="text" required placeholder="Nombre y apellidos" id="nombre" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px">
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                        <label for="dni" class="color-text">DNI / NIE *</label>
+                        <input type="text" required placeholder="00000000X" id="dni" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px">
+                    </div>
+                </div>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                        <label for="nombre" class="color-text">Correo electrónico *</label>
+                        <input type="email" required placeholder="tucorreo@ejemplo.com" id="nombre" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px">
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                        <label for="dni" class="color-text">Teléfono de contacto *</label>
+                        <input type="tel" required placeholder="+34 600 000 000" id="dni" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px">
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
