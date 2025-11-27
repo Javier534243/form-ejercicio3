@@ -6,7 +6,7 @@
     <title>Formularios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="flex justify-content-center principal-font-family ">
+<body class="flex justify-content-center principal-font-family">
     <div class="max-width-1440px width-100-precent">
         <h1 class="color-text-title">Inscripción a un curso</h1>
         <p class="color-text">Rellena este formulario para inscribirte en el curso. Los campos marcados con * son obligatorios.</p>
@@ -63,20 +63,65 @@
                             <option value="smx1">1º SMX - Sistemas Microinformáticos y Redes</option>
                         </select>
                     </div>
-                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-10px">
                         <label for="turno" class="color-text">Turno preferente *</label>
-                        <div id="turno">
-                            <label>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <input type="radio">
-                            </label>
-                            <label>
-                                <input type="radio">
-                            </label>
+                        <div id="turno" class="flex flex-direction-column margin-top-5px gap-10px">
+                            <div class="flex aling-items-center">
+                                <input type="radio" id="man" name="turnos" class="width-1_2em height-1_2em">
+                                <label for="man" class="">Mañana</label>
+                            </div>
+                            <div class="flex aling-items-center">
+                                <input type="radio" id="tar" name="turnos" class="width-1_2em height-1_2em">
+                                <label for="tar" class="">Tarde</label>
+                            </div>
+                            <div class="flex aling-items-center">
+                                <input type="radio" id="ind" name="turnos" class="width-1_2em height-1_2em">
+                                <label for="ind" class="">Indiferente</label>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="number" class="color-text">Nota media del último estudio</label>
+                        <input type="number" id="number" step="0.1" min="0" max="10" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="range" class="color-text">Experiencia en programación (0 = nada, 10 = mucha)</label>
+                        <input type="range" id="range" min="0" max="10" class="color-text principal-font-family  border-radius-5px margin-top-5px">
+                    </div>
+                </div>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="estudios" class="color-text">Estudios previos</label>
+                        <select name="estudios" id="estudios" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                            <option value>Seleciona una opción...</option>
+                            <option value="eso">ESO</option>
+                            <option value="bachillerato">Bachillerato</option>
+                            <option value="grado_medio">Ciclo Formativo de Grado Medio</option>
+                            <option value="grado_superior">Ciclo Formativo de Grado Superior</option>
+                            <option value="Univerisidad">Estudios universitarios</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="border-none padding-0 margin-right-0px margin-left-0px">
+                <legend class="color-text padding-0 margin-bottom-10px">Preferencias y servicios adicionales</legend>
+                <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                    <label for="time" class="color-text">Franja horaria preferente de contacto</label>
+                    <input type="time" id="time" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                </div>
+                <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                    <label for="conocidos" class="color-text">¿Cómo nos has conocido?</label>
+                    <input list="estudios" id="conocidos" name="conocido" placeholder="Empieza a escribir..." class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    <datalist id="estudios">
+                        <option value="Amigos / conocidos"></option>
+                        <option value="Redes sociales"></option>
+                        <option value="Página web del centro"></option>
+                        <option value="Feria educativa"></option>
+                        <option value="Profesor/a de tu centro"></option>
+                    </datalist>
                 </div>
             </fieldset>
         </form>
