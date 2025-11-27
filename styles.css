@@ -77,6 +77,10 @@ body {
     border: none;
 }
 
+.border-none-focus:focus {
+    border: 2px solid #fff;
+}
+
 
 /* ------------- OUTLINE STYLES ----------------- */
 
