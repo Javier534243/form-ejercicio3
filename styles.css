@@ -3,6 +3,7 @@ body {
     --color-text: #373c44;
     --color-blue: #0172ad;
     --color-grey: #8891a4;
+    --background-color-grey: #7b8495;
     box-sizing: border-box;
 }
 
@@ -22,6 +23,24 @@ body {
     color: var(--color-text);
 }
 
+.color-white {
+    color: #fff;
+}
+
+
+.color-grey {
+    color: #8891a4;
+}
+
+/* --------------- BACKGROUND COLOR ----------------- */
+
+.background-color-grey {
+    background-color: var(--background-color-grey);
+}
+
+.background-color-blue {
+    background-color: var(--color-blue);
+}
 
 /* ----------------- FLEX STYLES -------------------- */
 
@@ -56,11 +75,15 @@ body {
 }
 
 .max-width-1440px {
-    max-width: 1440px;
+    max-width: 1400px;
 }
 
 .width-1_2em {
     width: 1.2em;
+}
+
+.width-fit-content {
+    width: fit-content;
 }
 
 /* --------------- HEIGHT STYLES ----------------- */
@@ -98,12 +121,22 @@ body {
     margin-top: 5px;
 }
 
+.margin-top-10px {
+    margin-top: 10px;
+}
+
 .margin-right-0px {
     margin-right: 0px;
 }
 
 .margin-left-0px {
     margin-left: 0px;
+}
+
+/* -------------- FONT SIZES ------------------- */
+
+.font-sizes-16px {
+    font-size: 16px;
 }
 
 /* -------------- BORDERS STYLES ---------------- */
@@ -138,5 +171,30 @@ body {
     outline-offset: -2px;
 }
 
-/* -------------- SCALE ----------------- */
+/* -------------- FILE BUTTON ----------------- */
 
+.color-grey-file::file-selector-button {
+    background-color: #8891a4;
+}
+
+.border-file::file-selector-button {
+    border: 2px solid #8891a4;
+}
+
+.padding-botton-file::file-selector-button {
+    padding: 10px 20px;
+}
+
+.border-radius-file::file-selector-button {
+    border-radius: 5px;
+}
+
+.text-color-white::file-selector-button {
+    color: #fff;
+}
+
+/* --------------- OTHERS -------------- */
+
+.cursor-pointer {
+    cursor: pointer;
+}

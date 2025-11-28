@@ -114,8 +114,8 @@
                 </div>
                 <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
                     <label for="conocidos" class="color-text">¿Cómo nos has conocido?</label>
-                    <input list="estudios" id="conocidos" name="conocido" placeholder="Empieza a escribir..." class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
-                    <datalist id="estudios">
+                    <input list="conocer" id="conocidos" name="conocido" placeholder="Empieza a escribir..." class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px">
+                    <datalist id="conocer">
                         <option value="Amigos / conocidos"></option>
                         <option value="Redes sociales"></option>
                         <option value="Página web del centro"></option>
@@ -123,7 +123,64 @@
                         <option value="Profesor/a de tu centro"></option>
                     </datalist>
                 </div>
+                <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                    <label for="sevices">Servicios adicionales (opcional):</label>
+                    <div id="services">
+                        <div class="flex gap-10px margin-top-10px">
+                            <input type="checkbox" id="academica" class="width-1_2em height-1_2em">
+                            <label for="academica">Quiero recibir una sesión de orientación académica</label>
+                        </div>
+                        <div class="flex gap-10px">
+                            <input type="checkbox" id="ayuda" class="width-1_2em height-1_2em">
+                            <label for="ayuda">Quiero información sobre becas y ayudas</label>
+                        </div>
+                        <div class="flex gap-10px margin-bottom-10px">
+                            <input type="checkbox" id="trabajar" class="width-1_2em height-1_2em">
+                            <label for="trabajar">Quiero acceso a la bolsa de trabajo/prácticas</label>
+                        </div>
+                    </div>
+                </div>
             </fieldset>
+            <fieldset class="border-none padding-0 margin-right-0px margin-left-0px">
+                <legend class="color-text padding-0 margin-bottom-10px">Documentación</legend>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="file-dni" class="color-text">Copia del DNI / NIE (PDF o imagen)</label>
+                        <input type="file" id="file-dni" class="width-fit-content margin-top-10px color-grey-file border-file padding-botton-file border-radius-file text-color-white color-grey">
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="certificado" class="color-text">Certificado de notas (PDF)</label>
+                        <input type="file" id="certificado" class="width-fit-content margin-top-10px color-grey-file border-file padding-botton-file border-radius-file text-color-white color-grey">
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset class="border-none padding-0 margin-right-0px margin-left-0px">
+                <legend class="color-text padding-0 margin-bottom-10px">Comentarios adicionales y protección de datos</legend>
+                <div class="flex gap-20px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <label for="adicional" class="color-text">Comentarios adicionales</label>
+                        <textarea name="adic" id="adicional" rows="5" placeholder="Indica cualquier información relevante (discapacidad, compatibilidad con trabajo, etc.)" class="color-text padding-15px-20px principal-font-family outline-color-blue border-radius-5px border-none-focus outline-offset transition-outline border-grey margin-top-5px"></textarea>
+                    </div>
+                </div>
+                <div class="flex gap-10px flex-direction-column">
+                    <div class="flex gap-10px">
+                        <input type="checkbox" required id="politicas" class="width-1_2em height-1_2em">
+                        <label for="politicas">Acepto la política de privacidad y el tratamiento de mis datos *</label>
+                    </div>
+                    <div class="flex gap-10px">
+                        <input type="checkbox" id="spam" class="width-1_2em height-1_2em">
+                        <label for="spam">Acepto recibir comunicaciones informativas sobre otros cursos</label>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="flex gap-20px margin-top-10px">
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px margin-bottom-20px">
+                        <input type="submit" value="Enviar solicitud" class="text-color-white padding-15px-20px background-color-blue border-none color-white font-sizes-16px  border-radius-5px margin-top-5px cursor-pointer">
+                    </div>
+                    <div class="flex flex-direction-column width-100-precent border-radius-5px">
+                        <input type="reset" value="Limpiar formulario" class="text-color-white padding-15px-20px background-color-grey border-none border-radius-5px font-sizes-16px color-white margin-top-5px cursor-pointer">
+                    </div>
+                </div>
         </form>
     </div>
 </body>
