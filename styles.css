@@ -133,6 +133,10 @@ body {
     margin-left: 0px;
 }
 
+.margin-bottom-0px {
+    margin-bottom: 0;
+}
+
 /* -------------- FONT SIZES ------------------- */
 
 .font-sizes-16px {
